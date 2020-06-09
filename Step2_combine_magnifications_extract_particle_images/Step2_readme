@@ -1,0 +1,4 @@
+This code concatinates multiple csv files of measured particle data from multiple magnifications generated in step one.
+Instead of combining all data, including particles way outside the resolution range of a magnification, only size ranges within the resolution range of each magnification are included.  In this case, sizes slightly below the expected optimal range are also included so that the true optimal size range can be determined later in step 4.
+Next, this code uses image file names and particle bounding box coordinates to extract individual particle "regions of interest" from each micrograph.
+Each individual particle image is saved in an output directory.
