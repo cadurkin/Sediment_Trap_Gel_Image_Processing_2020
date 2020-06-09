@@ -1,0 +1,11 @@
+This code calculates the number flux of each sinking particle category.  
+Input csv file is generated from Step 3, the particle data file concatinated from multiple magnifications and with assigned particle IDs.
+This code will save graphs the visualize the number fluxes calculated from each magnification, so you can sanity check whether optimal size ranges were used in each magnification
+A csv file is saved with flux data including all particle types.
+
+Example usage in shell:
+> Calculate fluxes.py [input csv] [sample name] [time] [output directory]
+
+Time is the deployment time of the trap, used to calculte flux.
+The code is almost identical among cruises, but needed to be modified slightly due to different image resolution and dimensions due to camera used.
+Also, used different magnifications depending on the cruise, so combined fluxes across magnifications differently.
