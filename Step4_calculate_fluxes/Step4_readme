@@ -9,3 +9,4 @@ Example usage in shell:
 Time is the deployment time of the trap, used to calculte flux.
 The code is almost identical among cruises, but needed to be modified slightly due to different image resolution and dimensions due to camera used.
 Also, used different magnifications depending on the cruise, so combined fluxes across magnifications differently.
+RR55 and RR56 samples collected during EXPORTS had a separete size range of optimal magnifications used, because these samples were left out at sea for a long duation due to instrument error before recovery.  The resulting samples were relatively degraded due to the extended deployment, so some particles became more obscured at certain magnifications in a way that did not occur in fresh samples that did not contain rotting zooplankton carcasses.  To extract accurate information from these samples, a different set of magnification ranges were required to calculate fluxes. 
