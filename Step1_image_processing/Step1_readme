@@ -1,0 +1,18 @@
+This code performs image processing steps on gel images.  
+The "Tutorial" jupyter notebook illustrates how these processing steps work on a single image example.  
+Each '.py' file accesses a directory of images for each cruise.  That directory contains all images from a single magnification and the magnification must be specified.
+The code is nearly the same for all cruises, but has additional processing steps for obliquely lit images.
+The brightness thresholds, pixel scaling, and image dimensions were also different among the cruises.
+
+Example of how to use in shell:
+
+>gel_trap_image_processing [input_directory] [output_mask_directory] [magnification, an integer] [blank reference image]
+
+
+The input directory is the file containing images
+Output_mask_directory is the file where the code should save particle image masks and the csv data file
+magnification is the microscope imaging magnification and is used to choose pixel scaling values
+blank reference image is an image file that the background brightness should be normalized to.  This code could easily be modified to exclude the need for a blank reference image.
+
+After this code has run, it will save a mask image of every micrograph so that you can sanity check the accuracy of particle detection.  
+It will save a csv file with every single paritcle detected and a second csv file only including the "measured" particles (duplicates from multiple focal planes removed).
